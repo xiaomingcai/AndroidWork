@@ -47,17 +47,7 @@ public class MainActivity extends AppCompatActivity {
                }
                rotation=ChangeOrientation;
 
-               /* if (orientation > 350 || orientation < 10) { //0度
-                    orientation = 0;
-                } else if (orientation > 80 && orientation < 100) { //90度
-                    orientation = 90;
-                } else if (orientation > 170 && orientation < 190) { //180度
-                    orientation = 180;
-                } else if (orientation > 260 && orientation < 280) { //270度
-                    orientation = 270;
-                } else {
-                    return;
-                }*/
+
                 Log.v("zmz","Orientation changed to " + orientation);
             }
             };
