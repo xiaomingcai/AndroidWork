@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         rotation = getWindowManager().getDefaultDisplay().getRotation();
-        Log.v("zmz","rotation changed to " + rotation);
+       // Log.v("zmz","rotation changed to " + rotation);
         mOrientationListener=new OrientationEventListener(this, SensorManager.SENSOR_DELAY_NORMAL) {
             @Override
             public void onOrientationChanged(int orientation) {
@@ -48,15 +48,15 @@ public class MainActivity extends AppCompatActivity {
                rotation=ChangeOrientation;
 
 
-                Log.v("zmz","Orientation changed to " + orientation);
+           //     Log.v("zmz","Orientation changed to " + orientation);
             }
             };
 
         if (mOrientationListener.canDetectOrientation()) {
-            Log.v("zmz", "Can detect orientation");
+        //    Log.v("zmz", "Can detect orientation");
             mOrientationListener.enable();
         } else {
-            Log.v("zmz", "Cannot detect orientation");
+         //   Log.v("zmz", "Cannot detect orientation");
             mOrientationListener.disable();
         }
 
